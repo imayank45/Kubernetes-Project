@@ -7,7 +7,7 @@ ENV PYTHONUNBUFFERED=1
 
 # set the working directory inside the container
 WORKDIR /app
-
+ 
 # copy only the required files
 COPY requirements.txt /app/
 COPY app.py /app/

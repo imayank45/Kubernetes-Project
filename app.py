@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def home():
     message = ""
-    if request.method == "POST":
+    if request.method == "POST": 
         name = request.form.get("name")
         message = f"Hello {name}, Welcome to the Kubernetes test application!!!"
     return render_template("index.html", message=message)
